@@ -1,13 +1,11 @@
-package com.catdog;
+package com.catdog.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CatdogApplication {
-
+public class Application {
     public static void main(String[] args) {
-        SpringApplication.run(CatdogApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
-
 }
