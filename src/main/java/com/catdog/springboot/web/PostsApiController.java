@@ -2,6 +2,7 @@ package com.catdog.springboot.web;
 
 
 import com.catdog.springboot.service.PostsService;
+import com.catdog.springboot.web.dto.PostsResponseDto;
 import com.catdog.springboot.web.dto.PostsSaveRequestDto;
 import com.catdog.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
@@ -22,4 +23,5 @@ public class PostsApiController {
     public Long update(@PathVariable Long id, @RequestBody PostsUpdateRequestDto requestDto) {
         return postsService.update(id, requestDto);
     }
+
 }
